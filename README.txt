@@ -25,23 +25,25 @@ NetObjects     - Simplifies the opcode, packet and errors usage
 To compile in Windows (at least in MSVC):
 -------------------------------------------
 Include folders:
-	.\pthreads\include
-	.\mysql
+	libs
+	libs\mysql
+	libs\pthreads\include
 -------------------------------------------
 Lib folders:
-	.\mysql
-	.\pthreads\lib
+	libs\minINI
+	libs\mysql
+	libs\pthreads\lib
 -------------------------------------------
 Libs
+	minINI.lib
 	libmysql.lib 
 	ws2_32.lib 
 	pthreadVC2.lib
 -------------------------------------------
 Preprocessor:
 	_CRT_SECURE_NO_WARNINGS
-	INI_ANSIONLY
-	_TCHAR_DEFINED
-	
+	MININI_ANSI	
+
 ==================================
 
 Linux support is on the way
